@@ -20,7 +20,7 @@ While building this keyboard, various techniques will be implemented, such as:
     - Higher Order Functions
     - Modular Design
     - Full page functionality
--Yeoman
+- Yeoman
 
 ## Who?
 
