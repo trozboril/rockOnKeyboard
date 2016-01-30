@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>RozSynth</title>
+		<title>Rock On Keyboard!</title>
 		<link href="keyboard.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
-	<h1><strong><em>Get ya' groove on...</strong></em></h1>
-		<div class="redbar"></div>
-		<div id="keyboard"></div>
+		<h1><strong><em>Get ya' groove on...</strong></em></h1>
+		<div id="keyboardContainer">
+			<div id="keyboardType">
+				<h3>Keyboard Type</h3>
+				<div class="buttons">
+					<button type="button" id="piano">Classic Piano</button>
+					<button type="button" id="electric">Electric Piano</button>
+					<button type="button" id="drum">Drum Kit</button>
+				</div>
+			</div>
+			<div class="smallVent"></div>
+			<div class="smallVent"></div>
+			<div class="smallVent"></div>
+			<div id="loops">
+				<h3>Loops</h3>
+				<div class="buttons">
+					<button type="button" id="guitar1">Guitar: <strong>1</strong></button>
+					<button type="button" id="guitar2">Guitar: <strong>2</strong></button>
+					<button type="button" id="drumLoop1">Drum Loop: <strong>3</strong></button>
+					<button type="button" id="drumLoop2">Drum Loop: <strong>4</strong></button>
+					<button type="button" id="drumLoop3">Drum Loop: <strong>5</strong></button>
+					<button type="button" id="synthLoop1">Synth Loop: <strong>6</strong></button>
+					<button type="button" id="synthLoop2">Synth Loop: <strong>7</strong></button>
+					<button type="button" id="synthLoop3">Synth Loop: <strong>8</strong></button>
+				</div>
+			</div>
+			<div class="redbar"></div>
+			<div id="keysWrap">
+				<div id="keyboard"></div>
+			</div>
+			<h4>Rock On!</h4>
+			<div class="vent"></div>
+			<div class="vent"></div>
+			<div class="vent"></div>
+			<div class="vent"></div>
+			<div class="vent"></div>
+		</div>
+		<hr>
+		<div id="musicPlay"></div>
+		<div id="musicPlay2"></div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script type="text/javascript" src="keyboard.js"></script>
+	<script type="text/javascript" src="piano.js"></script>
+	<script type="text/javascript" src="drumKit.js"></script>
+	<script type="text/javascript" src="electric.js"></script>
+	<script type="text/javascript" src="electric.js"></script>
+	<script type="text/javascript" src="loops.js"></script>
 	</body>
 </html>
