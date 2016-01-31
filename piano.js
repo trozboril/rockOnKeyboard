@@ -171,7 +171,6 @@ $('#piano').on('click', function () {
 
    	    
    	    $(this).keyup(function(event) {
-   	    	var color;
    	        if(event.keyCode === parseInt(key)) {
    	        $('#' + key).html('');
    	        for (var n = 0; n < pianoSounds.length; n++) {

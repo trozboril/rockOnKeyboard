@@ -17,7 +17,7 @@ $(document).ready(function() {
       },
       {
       num: 69,
-      sound: 'drum-and-base/Gasoline_Drop.wav',
+      sound: 'synthDrums/snare2.wav',
       pressed: false
       },
       {
@@ -114,19 +114,19 @@ $(document).ready(function() {
       // ,
       {
       num: 188,
-      sound: 'drum-and-base/Trunk02_Snare.wav',
+      sound: 'synthDrums/chew1.wav',
       pressed: false
       },
       // .
       {
       num: 190,
-      sound: 'drum-and-base/Warning01_Snare.wav',
+      sound: 'synthDrums/chew2.wav',
       pressed: false
       },
       // /
       {
       num: 191,
-      sound: 'drum-and-base/Zinc_Hat.wav',
+      sound: 'synthDrums/chew3.wav',
       pressed: false
    }
    ];
@@ -173,7 +173,6 @@ $(document).ready(function() {
 
           
           $(this).keyup(function(event) {
-            var color;
               if(event.keyCode === parseInt(key)) {
               $('#' + key).html('');
               for (var n = 0; n < drumKit.length; n++) {

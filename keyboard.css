@@ -3,8 +3,9 @@ body {
 }
 
 h1 {
-	padding: 20px;
+	padding: 10px;
 	font-family: fantasy;
+	color: white;
 }
 
 h4 {
@@ -26,14 +27,32 @@ button {
 	background-color: grey;
 }
 
+#outer {
+	width: 100%;
+	height: 700px;
+	margin-bottom: 2em;
+	opacity: .95;
+}
+
+.bolt {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	box-shadow: 3px 3px 4px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 1em;
+	background-color: black;
+}
+
 #keyboardContainer {
 	height: 700px;
-	width: 100%;
+	width: 95%;
 	background-color: #222;
 	float: left;
 	border: 2px solid black;
 	border-radius: 20px 20px 10px 10px;
-	box-shadow: 3px 3px 5px;
+	box-shadow: 10px 10px 5px;
 }
 
 #keyboardType {
@@ -71,7 +90,7 @@ button {
 
 .indKey {
 	height: 100%;
-	width: 4.0178559%;
+	width: 4.01%;
 	border: 1px solid black;
 	float: left;
 	border-radius: 15px 15px 5px 5px;
@@ -93,7 +112,7 @@ button {
 	float: right;
 	border: 2px solid black;
 	width: 35%;
-	margin-right: 10em;
+	margin-right: 7em;
 	margin-top: 10px;
 	box-shadow: 2px 2px 4px #111;
 }

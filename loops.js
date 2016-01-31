@@ -18,11 +18,11 @@ $(document).ready(function (){
 		},
 		{
 			num: 53,
-			sound: "drumloops/Cutty_65_Roll02.wav",
+			sound: "synthloops/drumLoopCool",
 		},
 		{
 			num: 54,
-			sound: "synthloops/130_Maxwell_Cm_Bass.wav",
+			sound: "synthloops/awesomeSynthLoop",
 		},
 		{
 			num: 55,

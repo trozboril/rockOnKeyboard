@@ -46,86 +46,86 @@ $('#electric').on('click', function () {
       },
       {
       num: 65,
-      sound: 'drum-and-base/Plonk_Snare.wav',
+      sound: 'buzzSynth/buzz1.wav',
       pressed: false
       },
       {
       num: 83,
-      sound: 'drum-and-base/Round04_Kick.wav',
+      sound: 'buzzSynth/buzz2.wav',
       pressed: false
       },
       {
       num: 68,
-      sound: 'drum-and-base/Saturated_Snare02.wav',
+      sound: 'buzzSynth/buzz3.wav',
       pressed: false
       },
       {
       num: 70,
-      sound: 'drum-and-base/Scenics_HiHat05.wav',
+      sound: 'buzzSynth/buzz4.wav',
       pressed: false
       },
       {
       num: 74,
-      sound: 'drum-and-base/Scenics_Kick04.wav',
+      sound: 'buzzSynth/buzz5.wav',
       pressed: false
       },
       {
       num: 75,
-      sound: 'drum-and-base/Scenics_Kick08.wav',
+      sound: 'buzzSynth/buzz6.wav',
       pressed: false
       },
       {
       num: 76,
-      sound: 'drum-and-base/Scenics_Snare03.wav',
+      sound: 'buzzSynth/buzz7.wav',
       pressed: false
       },
       // ;
       {
       num: 186,
-      sound: 'drum-and-base/Scenics_Snare10.wav',
+      sound: 'buzzSynth/buzz8.wav',
       pressed: false
       },
       {
       num: 90,
-      sound: 'drum-and-base/Sizz_Cym.wav',
+      sound: 'buzzSynth/buzz9.wav',
       pressed: false
       },
       {
       num: 88,
-      sound: 'drum-and-base/SmashHit_Snare01.wav',
+      sound: 'buzzSynth/buzz10.wav',
       pressed: false
       },
       {
       num: 67,
-      sound: 'drum-and-base/Sweep_Clap01.wav',
+      sound: 'buzzSynth/buzz11.wav',
       pressed: false
       },
       {
       num: 86,
-      sound: 'drum-and-base/Temper_CHat.wav',
+      sound: 'buzzSynth/buzz12.wav',
       pressed: false
       },
       {
       num: 77,
-      sound: 'drum-and-base/Temper_OHat.wav',
+      sound: 'buzzSynth/buzz13.wav',
       pressed: false
       },
       // ,
       {
       num: 188,
-      sound: 'drum-and-base/Trunk02_Snare.wav',
+      sound: 'buzzSynth/buzz14.wav',
       pressed: false
       },
       // .
       {
       num: 190,
-      sound: 'drum-and-base/Warning01_Snare.wav',
+      sound: 'buzzSynth/buzz15.wav',
       pressed: false
       },
       // /
       {
       num: 191,
-      sound: 'drum-and-base/Zinc_Hat.wav',
+      sound: 'buzzSynth/buzz16.wav',
       pressed: false
    }
    ];
@@ -170,7 +170,6 @@ $('#electric').on('click', function () {
 
           
           $(this).keyup(function(event) {
-            var color;
               if(event.keyCode === parseInt(key)) {
               $('#' + key).html('');
               for (var n = 0; n < electricKit.length; n++) {
