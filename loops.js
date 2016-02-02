@@ -149,9 +149,6 @@ $(document).ready(function (){
 
 
 
-
-
-
 			
 
 
