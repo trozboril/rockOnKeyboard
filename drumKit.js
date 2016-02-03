@@ -140,8 +140,14 @@ $(document).ready(function() {
          var count = 0;
          for (var i = 0; i < drumKit.length; i++) {
                var idClass;
-               if(count % 2 === 0) {
-                  idClass = 'id="'+(drumKit[i].num)+'" class="indKey grey"';
+               if (count === 0) {
+                  idClass = 'id="'+(drumKit[i].num)+'" class="indKey first"';
+               }
+               else if (count === 23){
+                  idClass = 'id="'+(drumKit[i].num)+'" class="indKey last"';
+               }
+               else if (count > 0 && count < 23 && (count % 4 === 0)) {
+                  idClass = 'id="'+(drumKit[i].num)+'" class="indKey black"';
                } else {
                   idClass = 'id="'+(drumKit[i].num)+'" class="indKey"';
                }
@@ -149,43 +155,44 @@ $(document).ready(function() {
                keyPress(drumKit[i].num.toString());
             count++;
          }
-
          function appendKey (idClass){
             var key = '<div ' + idClass + '></div>';
             $('#keyboard').append(key);
          }
 
 
-            function keyPress (key){
-          $(this).keydown(function(event) {
-            for (var i = 0; i < drumKit.length; i++){
-                 if(event.keyCode === parseInt(key)) {
-                  if(drumKit[i].pressed === false) {
-                     $('#' + key).css("background-color", "lightblue");
-                     if (drumKit[i].num.toString() === key){
-                     $('#' + key).html('<audio src="' + drumKit[i].sound + '" autoplay></audio>');
-                     drumKit[i].pressed = true;
+         function keyPress (key){
+            $(this).keydown(function(event) {
+               for (var i = 0; i < drumKit.length; i++){
+                    if(event.keyCode === parseInt(key)) {
+                     if(drumKit[i].pressed === false) {
+                        $('#' + key).css("background-color", "lightblue");
+                        if (drumKit[i].num.toString() === key){
+                        $('#' + key).html('<audio id="sound' + drumKit[i].num + '" src="' + drumKit[i].sound + '" autoplay></audio>');
+                        drumKit[i].pressed = true;
+                        }
                      }
                   }
                }
-            }
-          });
+            });
 
-          
-          $(this).keyup(function(event) {
-              if(event.keyCode === parseInt(key)) {
-              $('#' + key).html('');
-              for (var n = 0; n < drumKit.length; n++) {
-               if(drumKit[n].num.toString() === key) {
-                  drumKit[n].pressed = false;
-               }
-               if ($('#' + key).hasClass('grey')) {
-                  $('#' + key).css("background-color", "grey");
-               } else {
-                  $('#' + key).css("background-color", "white");
-               }
-              }
-              }
+            $(this).keyup(function(event) {
+               if(event.keyCode === parseInt(key)) {
+                  for (var n = 0; n < drumKit.length; n++) {
+                     if(drumKit[n].num.toString() === key) {
+                        $('#sound' + key).animate({volume: 0.0}, 80);
+                        setTimeout( function(){
+                           $('#' + key).html('');
+                        }, 81);
+                        drumKit[n].pressed = false;
+                     }
+                     if ($('#' + key).hasClass('black')) {
+                        $('#' + key).css("background-color", "black");
+                     } else {
+                        $('#' + key).css("background-color", "white");
+                     }
+                 }
+                 }
             });
          }
       } else {

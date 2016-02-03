@@ -138,11 +138,17 @@ $('#piano').on('click', function () {
       	var count = 0;
       	for (var i = 0; i < pianoSounds.length; i++) {
       			var idClass;
-      			if(count % 2 === 0) {
-      				idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey grey"';
-      			} else {
-      				idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey"';
-      			}
+               if (count === 0) {
+                  idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey first"';
+               }
+               else if (count === 23){
+                  idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey last"';
+               }
+               else if (count > 0 && count < 23 && (count % 4 === 0)) {
+                  idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey black"';
+               } else {
+                  idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey white"';
+               }
       			appendKey(idClass);
       			keyPress(pianoSounds[i].num.toString());
       		count++;
@@ -155,37 +161,39 @@ $('#piano').on('click', function () {
 
 
          function keyPress (key){
-   	    $(this).keydown(function(event) {
-   	    	for (var i = 0; i < pianoSounds.length; i++){
-   		        if(event.keyCode === parseInt(key)) {
-   		        	if(pianoSounds[i].pressed === false) {
-   			        	$('#' + key).css("background-color", "lightblue");
-   			        	if (pianoSounds[i].num.toString() === key){
-   			        	$('#' + key).html('<audio src="' + pianoSounds[i].sound + '" autoplay></audio>');
-   			        	pianoSounds[i].pressed = true;
-   			        	}
-   		        	}
-   	    		}
-   	    	}
-   	    });
+            $(this).keydown(function(event) {
+               for (var i = 0; i < pianoSounds.length; i++){
+                    if(event.keyCode === parseInt(key)) {
+                     if(pianoSounds[i].pressed === false) {
+                        $('#' + key).css("background-color", "lightblue");
+                        if (pianoSounds[i].num.toString() === key){
+                        $('#' + key).html('<audio id="sound' + pianoSounds[i].num + '" src="' + pianoSounds[i].sound + '" autoplay></audio>');
+                        pianoSounds[i].pressed = true;
+                        }
+                     }
+                  }
+               }
+            });
 
-   	    
-   	    $(this).keyup(function(event) {
-   	        if(event.keyCode === parseInt(key)) {
-   	        $('#' + key).html('');
-   	        for (var n = 0; n < pianoSounds.length; n++) {
-   	        	if(pianoSounds[n].num.toString() === key) {
-   	        		pianoSounds[n].pressed = false;
-   	        	}
-   	        	if ($('#' + key).hasClass('grey')) {
-   	        		$('#' + key).css("background-color", "grey");
-   	        	} else {
-   	        		$('#' + key).css("background-color", "white");
-   	        	}
-   	        }
-   	        }
-   	    });
-   	  }
+            $(this).keyup(function(event) {
+               if(event.keyCode === parseInt(key)) {
+                  for (var n = 0; n < pianoSounds.length; n++) {
+                     if(pianoSounds[n].num.toString() === key) {
+                        $('#sound' + key).animate({volume: 0.0}, 80);
+                        setTimeout( function(){
+                           $('#' + key).html('');
+                        }, 81);
+                        pianoSounds[n].pressed = false;
+                     }
+                     if ($('#' + key).hasClass('black')) {
+                        $('#' + key).css("background-color", "black");
+                     } else {
+                        $('#' + key).css("background-color", "white");
+                     }
+                 }
+                 }
+            });
+         }
       } else {
          $('#keyboard').html('');
          $('#piano').css('background-color', 'grey');
