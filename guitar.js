@@ -135,18 +135,24 @@ $('#guitar').on('click', function () {
 
       if (counter % 2 !== 0) {
          $('#guitar').css('background-color', 'pink');
-      	var count = 0;
-      	for (var i = 0; i < guitarSounds.length; i++) {
-      			var idClass;
-      			if(count % 2 === 0) {
-      				idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey grey"';
-      			} else {
-      				idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey"';
-      			}
-      			appendKey(idClass);
-      			keyPress(guitarSounds[i].num.toString());
-      		count++;
-      	}
+         var count = 0;
+         for (var i = 0; i < guitarSounds.length; i++) {
+               var idClass;
+               if (count === 0) {
+                  idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey first"';
+               }
+               else if (count === 23){
+                  idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey last"';
+               }
+               else if (count > 0 && count < 23 && (count % 4 === 0)) {
+                  idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey black"';
+               } else {
+                  idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey"';
+               }
+               appendKey(idClass);
+               keyPress(guitarSounds[i].num.toString());
+            count++;
+         }
 
       	function appendKey (idClass){
       		var key = '<div ' + idClass + '></div>';
@@ -155,37 +161,39 @@ $('#guitar').on('click', function () {
 
 
          function keyPress (key){
-   	    $(this).keydown(function(event) {
-   	    	for (var i = 0; i < guitarSounds.length; i++){
-   		        if(event.keyCode === parseInt(key)) {
-   		        	if(guitarSounds[i].pressed === false) {
-   			        	$('#' + key).css("background-color", "lightblue");
-   			        	if (guitarSounds[i].num.toString() === key){
-   			        	$('#' + key).html('<audio src="' + guitarSounds[i].sound + '" autoplay></audio>');
-   			        	guitarSounds[i].pressed = true;
-   			        	}
-   		        	}
-   	    		}
-   	    	}
-   	    });
+            $(this).keydown(function(event) {
+               for (var i = 0; i < guitarSounds.length; i++){
+                    if(event.keyCode === parseInt(key)) {
+                     if(guitarSounds[i].pressed === false) {
+                        $('#' + key).css("background-color", "lightblue");
+                        if (guitarSounds[i].num.toString() === key){
+                        $('#' + key).html('<audio id="sound' + guitarSounds[i].num + '" src="' + guitarSounds[i].sound + '" autoplay></audio>');
+                        guitarSounds[i].pressed = true;
+                        }
+                     }
+                  }
+               }
+            });
 
-   	    
-   	    $(this).keyup(function(event) {
-   	        if(event.keyCode === parseInt(key)) {
-   	        $('#' + key).html('');
-   	        for (var n = 0; n < guitarSounds.length; n++) {
-   	        	if(guitarSounds[n].num.toString() === key) {
-   	        		guitarSounds[n].pressed = false;
-   	        	}
-   	        	if ($('#' + key).hasClass('grey')) {
-   	        		$('#' + key).css("background-color", "grey");
-   	        	} else {
-   	        		$('#' + key).css("background-color", "white");
-   	        	}
-   	        }
-   	        }
-   	    });
-   	  }
+            $(this).keyup(function(event) {
+               if(event.keyCode === parseInt(key)) {
+                  for (var n = 0; n < guitarSounds.length; n++) {
+                     if(guitarSounds[n].num.toString() === key) {
+                        $('#sound' + key).animate({volume: 0.0}, 100);
+                        setTimeout( function(){
+                           $('#' + key).html('');
+                        }, 101);
+                        guitarSounds[n].pressed = false;
+                     }
+                     if ($('#' + key).hasClass('black')) {
+                        $('#' + key).css("background-color", "black");
+                     } else {
+                        $('#' + key).css("background-color", "white");
+                     }
+                 }
+                 }
+            });
+         }
       } else {
          $('#keyboard').html('');
          $('#guitar').css('background-color', 'grey');

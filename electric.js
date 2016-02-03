@@ -137,8 +137,14 @@ $('#electric').on('click', function () {
          var count = 0;
          for (var i = 0; i < electricKit.length; i++) {
                var idClass;
-               if(count % 2 === 0) {
-                  idClass = 'id="'+(electricKit[i].num)+'" class="indKey grey"';
+               if (count === 0) {
+                  idClass = 'id="'+(electricKit[i].num)+'" class="indKey first"';
+               }
+               else if (count === 23){
+                  idClass = 'id="'+(electricKit[i].num)+'" class="indKey last"';
+               }
+               else if (count > 0 && count < 23 && (count % 4 === 0)) {
+                  idClass = 'id="'+(electricKit[i].num)+'" class="indKey black"';
                } else {
                   idClass = 'id="'+(electricKit[i].num)+'" class="indKey"';
                }
@@ -154,37 +160,39 @@ $('#electric').on('click', function () {
 
 
          function keyPress (key){
-          $(this).keydown(function(event) {
-            for (var i = 0; i < electricKit.length; i++){
-                 if(event.keyCode === parseInt(key)) {
-                  if(electricKit[i].pressed === false) {
-                     $('#' + key).css("background-color", "lightblue");
-                     if (electricKit[i].num.toString() === key){
-                     $('#' + key).html('<audio src="' + electricKit[i].sound + '" autoplay></audio>');
-                     electricKit[i].pressed = true;
+            $(this).keydown(function(event) {
+               for (var i = 0; i < electricKit.length; i++){
+                    if(event.keyCode === parseInt(key)) {
+                     if(electricKit[i].pressed === false) {
+                        $('#' + key).css("background-color", "lightblue");
+                        if (electricKit[i].num.toString() === key){
+                        $('#' + key).html('<audio id="sound' + electricKit[i].num + '" src="' + electricKit[i].sound + '" autoplay></audio>');
+                        electricKit[i].pressed = true;
+                        }
                      }
                   }
                }
-            }
-          });
+            });
 
-          
-          $(this).keyup(function(event) {
-              if(event.keyCode === parseInt(key)) {
-              $('#' + key).html('');
-              for (var n = 0; n < electricKit.length; n++) {
-               if(electricKit[n].num.toString() === key) {
-                  electricKit[n].pressed = false;
-               }
-               if ($('#' + key).hasClass('grey')) {
-                  $('#' + key).css("background-color", "grey");
-               } else {
-                  $('#' + key).css("background-color", "white");
-               }
-              }
-              }
-          });
-        }
+            $(this).keyup(function(event) {
+               if(event.keyCode === parseInt(key)) {
+                  for (var n = 0; n < electricKit.length; n++) {
+                     if(electricKit[n].num.toString() === key) {
+                        $('#sound' + key).animate({volume: 0.0}, 80);
+                        setTimeout( function(){
+                           $('#' + key).html('');
+                        }, 81);
+                        electricKit[n].pressed = false;
+                     }
+                     if ($('#' + key).hasClass('black')) {
+                        $('#' + key).css("background-color", "black");
+                     } else {
+                        $('#' + key).css("background-color", "white");
+                     }
+                 }
+                 }
+            });
+         }
       } else {
          $('#keyboard').html('');
          $('#electric').css('background-color', 'grey');
