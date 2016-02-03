@@ -1,8 +1,12 @@
+//*****electric kit js*****//
 $(document).ready(function() {
+   //counter for on/off kit
    var counter = 0;
 
+//on click initiate js file
 $('#electric').on('click', function () {
 
+   //sounds array
    var electricKit = [
       {
       num: 81,
@@ -130,13 +134,18 @@ $('#electric').on('click', function () {
    }
    ];
 
+      //increment counter for on/off
       counter++
 
+      //only if counter is "on"
       if (counter % 2 !== 0) {
          $('#electric').css('background-color', 'pink');
+         //start internal count for appending keys to keyboard
          var count = 0;
+         //initiate forloop to append keys
          for (var i = 0; i < electricKit.length; i++) {
                var idClass;
+               //set idCass depending on key style
                if (count === 0) {
                   idClass = 'id="'+(electricKit[i].num)+'" class="indKey first"';
                }
@@ -148,17 +157,20 @@ $('#electric').on('click', function () {
                } else {
                   idClass = 'id="'+(electricKit[i].num)+'" class="indKey"';
                }
+               //call appendKey function with idClass assigned above as argument
                appendKey(idClass);
+               //call keypress function on whatever key ID as argument depending on selected key
                keyPress(electricKit[i].num.toString());
             count++;
          }
 
+         //append Key function called above
          function appendKey (idClass){
             var key = '<div ' + idClass + '></div>';
             $('#keyboard').append(key);
          }
 
-
+         //function which initates sound (appending an audio html tag to individual key, autoplay that audio tag.)
          function keyPress (key){
             $(this).keydown(function(event) {
                for (var i = 0; i < electricKit.length; i++){

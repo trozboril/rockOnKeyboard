@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(//*****piano sounds js*****//
+   document).ready(function() {
 
     var counter = 0;
 

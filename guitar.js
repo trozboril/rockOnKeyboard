@@ -1,3 +1,4 @@
+//*****electro groove js*****//
 $(document).ready(function() {
 
     var counter = 0;
@@ -179,10 +180,10 @@ $('#guitar').on('click', function () {
                if(event.keyCode === parseInt(key)) {
                   for (var n = 0; n < guitarSounds.length; n++) {
                      if(guitarSounds[n].num.toString() === key) {
-                        $('#sound' + key).animate({volume: 0.0}, 100);
+                        $('#sound' + key).animate({volume: 0.0}, 125);
                         setTimeout( function(){
                            $('#' + key).html('');
-                        }, 101);
+                        }, 126);
                         guitarSounds[n].pressed = false;
                      }
                      if ($('#' + key).hasClass('black')) {

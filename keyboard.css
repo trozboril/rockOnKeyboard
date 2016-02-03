@@ -1,5 +1,5 @@
 body {
-	font-family: sans-serif;
+	font-family: fantasy;
 }
 
 h1 {
@@ -27,11 +27,20 @@ button {
 	background-color: grey;
 }
 
+button:focus {
+	outline-width: 0;
+}
+
+#loops .buttons {
+
+}
+
 #outer {
 	width: 100%;
 	height: 700px;
 	margin-bottom: 2em;
 	opacity: .95;
+	margin-left: 2%;
 }
 
 .bolt {
@@ -42,6 +51,17 @@ button {
 	float: right;
 	margin-top: 10px;
 	margin-right: 1em;
+	background-color: black;
+}
+
+.bolt1 {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	box-shadow: 3px 3px 4px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 1em;
 	background-color: black;
 }
 
@@ -59,7 +79,7 @@ button {
 	height: 100px;
 	width: 25%;
 	float: left;
-	margin-left: 5%;
+	margin-left: 2.5%;
 }
 
 #loops{
@@ -127,7 +147,7 @@ button {
 .vent {
 	margin-left: 1.5em;
 	border: 2px solid black;
-	width: 50%;
+	width: 65%;
 	margin-top: 10px;
 	box-shadow: 2px 2px 4px #111;
 }

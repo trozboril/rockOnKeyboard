@@ -1,3 +1,4 @@
+//*****drum kit js*****//
 $(document).ready(function() {
 
    var counter = 0;
@@ -12,12 +13,12 @@ $(document).ready(function() {
       },
       {
       num: 87,
-      sound: 'drum-and-base/Drive02_Snare.wav',
+      sound: 'effect-drop/Rotor_Rise.wav',
       pressed: false
       },
       {
       num: 69,
-      sound: 'synthDrums/snare2.wav',
+      sound: 'effect-drop/CircuitMelted_Fall.wav',
       pressed: false
       },
       {
@@ -180,10 +181,7 @@ $(document).ready(function() {
                if(event.keyCode === parseInt(key)) {
                   for (var n = 0; n < drumKit.length; n++) {
                      if(drumKit[n].num.toString() === key) {
-                        $('#sound' + key).animate({volume: 0.0}, 80);
-                        setTimeout( function(){
-                           $('#' + key).html('');
-                        }, 81);
+                        $('#' + key).html('');
                         drumKit[n].pressed = false;
                      }
                      if ($('#' + key).hasClass('black')) {

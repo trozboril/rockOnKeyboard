@@ -26,11 +26,11 @@ $(document).ready(function (){
 		},
 		{
 			num: 55,
-			sound: "synthloops/SmallHours_62_Am_Lead.wav",
+			sound: "synthloops/250749__joshuaempyre__groovy-guitar-loop.wav",
 		},
 		{
 			num: 56,
-			sound: "synthloops/OldArmour_68_Dm_Pad.wav",
+			sound: "synthloops/91033__m-red__autumn-loop.wav",
 		}
 		]
 		
