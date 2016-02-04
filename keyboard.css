@@ -84,6 +84,7 @@ button:focus {
 	width: 50%;
 	margin-left: 45%;
 }
+
 .redbar {
 	border: 3px solid red;
 	width: 92.2%;
@@ -103,86 +104,84 @@ button:focus {
 #keyboard {
 	height: 100%;
 	width: 100%;
+	position: relative;
 }
 
 .indKey {
 	height: 99.7%;
-	width: 4.01%;
+	width: 5.0%;
 	border: 1px solid black;
 	float: left;
 	border-radius: 0px 0px 5px 5px;
-	z-index: 1;
 }
 
 .first {
 	border-radius: 15px 0px 5px 5px;
 	box-shadow: 0px 0px 3px #ddd;
 	width: 5.1%;
+	position: relative;
 }
 
 .last {
 	border-radius: 0px 15px 5px 5px;
 	box-shadow: 0px 0px 3px #ddd;
 	width: 5.2%;
+	position: relative;
 }
 
 .black4 {
 	background-color: black;
-	height: 40%;
+	height: 60%;
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 28.58%;
-	margin-left: 16.5%;
+	top: 0%;
+	margin-left: 18.5%;
 }
 
 .black8 {
 	background-color: black;
-	height: 40%;
+	height: 60%;
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 28.58%;
-	margin-left: 30.4%;
+	top: 0%;
+	margin-left: 34.1%;
 }
 
 .black12 {
 	background-color: black;
-	height: 40%;
+	height: 60%;
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 28.58%;
-	margin-left: 44.3%;
+	top: 0%;
+	margin-left: 50%;
 }
 
 .black16 {
 	background-color: black;
-	height: 40%;
+	height: 60%;
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 28.58%;
-	margin-left: 58.25%;
+	top: 0%;
+	margin-left: 65.65%;
 }
 
 .black20 {
 	background-color: black;
-	height: 40%;
+	height: 60%;
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 28.58%;
-	margin-left: 72.2%;
+	top: 0%;
+	margin-left: 81.4%;
 }
 
 .white {
 	box-shadow: 0px 0px 3px #ddd;
 	width: 5.1%;
-}
-
-.wideKey {
-	width: 5%;
 }
 
 .vent {
@@ -200,4 +199,85 @@ button:focus {
 	margin-right: 7em;
 	margin-top: 10px;
 	box-shadow: 2px 2px 4px #111;
+}
+
+@media only screen and (min-width: 1900px) {
+
+.indKey {
+	height: 99.7%;
+	width: 5.0%;
+	border: 1px solid black;
+	float: left;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.first {
+	border-radius: 15px 0px 5px 5px;
+	box-shadow: 0px 0px 3px #ddd;
+	width: 5.5%;
+	position: relative;
+}
+
+.last {
+	border-radius: 0px 15px 5px 5px;
+	box-shadow: 0px 0px 3px #ddd;
+	width: 5.55%;
+	position: relative;
+}
+
+.black4 {
+	background-color: black;
+	height: 60%;
+	position: absolute;
+	box-shadow: 0px 2px 3px black;
+	border-radius: 0px 0px 3px 3px;
+	top: 0%;
+	margin-left: 18.5%;
+}
+
+.black8 {
+	background-color: black;
+	height: 60%;
+	position: absolute;
+	box-shadow: 0px 2px 3px black;
+	border-radius: 0px 0px 3px 3px;
+	top: 0%;
+	margin-left: 34.1%;
+}
+
+.black12 {
+	background-color: black;
+	height: 60%;
+	position: absolute;
+	box-shadow: 0px 2px 3px black;
+	border-radius: 0px 0px 3px 3px;
+	top: 0%;
+	margin-left: 50%;
+}
+
+.black16 {
+	background-color: black;
+	height: 60%;
+	position: absolute;
+	box-shadow: 0px 2px 3px black;
+	border-radius: 0px 0px 3px 3px;
+	top: 0%;
+	margin-left: 65.65%;
+}
+
+.black20 {
+	background-color: black;
+	height: 60%;
+	position: absolute;
+	box-shadow: 0px 2px 3px black;
+	border-radius: 0px 0px 3px 3px;
+	top: 0%;
+	margin-left: 81.4%;
+}
+
+.white {
+	box-shadow: 0px 0px 3px #ddd;
+	width: 5.1%;
+}
+
 }
