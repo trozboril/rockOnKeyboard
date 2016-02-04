@@ -4,6 +4,7 @@ $(document).ready(function() {
    var counter = 0;
 
    $('#drum').on('click', function () {
+      $('#keyboard').html('');
 
    var drumKit = [
       {

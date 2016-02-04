@@ -4,6 +4,8 @@ $(//*****piano sounds js*****//
     var counter = 0;
 
 $('#piano').on('click', function () {
+   $('#keyboard').html('');
+   
    var pianoSounds = [
    	{
    	num: 81,

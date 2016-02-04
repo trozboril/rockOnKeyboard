@@ -4,6 +4,8 @@ $(document).ready(function() {
     var counter = 0;
 
 $('#guitar').on('click', function () {
+   $('#keyboard').html('');
+
    var guitarSounds = [
    	{
    	num: 81,

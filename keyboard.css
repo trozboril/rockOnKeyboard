@@ -25,6 +25,7 @@ button {
 	padding: 5px;
 	border-radius: 5px;
 	background-color: grey;
+	box-shadow: 2px 2px 3px;
 }
 
 button:focus {
@@ -131,7 +132,7 @@ button:focus {
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 30.41%;
+	top: 28.58%;
 	margin-left: 16.5%;
 }
 
@@ -141,7 +142,7 @@ button:focus {
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 30.41%;
+	top: 28.58%;
 	margin-left: 30.4%;
 }
 
@@ -151,7 +152,7 @@ button:focus {
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 30.41%;
+	top: 28.58%;
 	margin-left: 44.3%;
 }
 
@@ -161,7 +162,7 @@ button:focus {
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 30.41%;
+	top: 28.58%;
 	margin-left: 58.25%;
 }
 
@@ -171,7 +172,7 @@ button:focus {
 	position: absolute;
 	box-shadow: 0px 2px 3px black;
 	border-radius: 0px 0px 3px 3px;
-	top: 30.41%;
+	top: 28.58%;
 	margin-left: 72.2%;
 }
 

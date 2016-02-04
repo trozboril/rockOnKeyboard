@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 //on click initiate js file
 $('#electric').on('click', function () {
+      $('#keyboard').html('');
 
    //sounds array
    var electricKit = [
