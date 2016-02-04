@@ -148,9 +148,9 @@ $(document).ready(function() {
                   idClass = 'id="'+(drumKit[i].num)+'" class="indKey last"';
                }
                else if (count > 0 && count < 23 && (count % 4 === 0)) {
-                  idClass = 'id="'+(drumKit[i].num)+'" class="indKey black"';
+                  idClass = 'id="'+(drumKit[i].num)+'" class="indKey black'+[i]+'"';
                } else {
-                  idClass = 'id="'+(drumKit[i].num)+'" class="indKey"';
+                  idClass = 'id="'+(drumKit[i].num)+'" class="indKey white"';
                }
                appendKey(idClass);
                keyPress(drumKit[i].num.toString());
@@ -179,12 +179,20 @@ $(document).ready(function() {
 
             $(this).keyup(function(event) {
                if(event.keyCode === parseInt(key)) {
+                  $('#' + key).html('');
                   for (var n = 0; n < drumKit.length; n++) {
                      if(drumKit[n].num.toString() === key) {
-                        $('#' + key).html('');
                         drumKit[n].pressed = false;
                      }
-                     if ($('#' + key).hasClass('black')) {
+                     if ($('#' + key).hasClass('black4')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black8')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black12')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black16')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black20')) {
                         $('#' + key).css("background-color", "black");
                      } else {
                         $('#' + key).css("background-color", "white");

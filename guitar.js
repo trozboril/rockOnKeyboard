@@ -146,9 +146,9 @@ $('#guitar').on('click', function () {
                   idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey last"';
                }
                else if (count > 0 && count < 23 && (count % 4 === 0)) {
-                  idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey black"';
+                  idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey black'+[i]+'"';
                } else {
-                  idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey"';
+                  idClass = 'id="'+(guitarSounds[i].num)+'" class="indKey white"';
                }
                appendKey(idClass);
                keyPress(guitarSounds[i].num.toString());
@@ -180,13 +180,21 @@ $('#guitar').on('click', function () {
                if(event.keyCode === parseInt(key)) {
                   for (var n = 0; n < guitarSounds.length; n++) {
                      if(guitarSounds[n].num.toString() === key) {
-                        $('#sound' + key).animate({volume: 0.0}, 125);
+                        $('#sound' + key).animate({volume: 0.0}, 100);
                         setTimeout( function(){
                            $('#' + key).html('');
-                        }, 126);
+                        }, 101);
                         guitarSounds[n].pressed = false;
                      }
-                     if ($('#' + key).hasClass('black')) {
+                     if ($('#' + key).hasClass('black4')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black8')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black12')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black16')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black20')) {
                         $('#' + key).css("background-color", "black");
                      } else {
                         $('#' + key).css("background-color", "white");

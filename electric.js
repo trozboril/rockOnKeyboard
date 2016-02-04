@@ -153,9 +153,9 @@ $('#electric').on('click', function () {
                   idClass = 'id="'+(electricKit[i].num)+'" class="indKey last"';
                }
                else if (count > 0 && count < 23 && (count % 4 === 0)) {
-                  idClass = 'id="'+(electricKit[i].num)+'" class="indKey black"';
+                  idClass = 'id="'+(electricKit[i].num)+'" class="indKey black'+[i]+'"';
                } else {
-                  idClass = 'id="'+(electricKit[i].num)+'" class="indKey"';
+                  idClass = 'id="'+(electricKit[i].num)+'" class="indKey white"';
                }
                //call appendKey function with idClass assigned above as argument
                appendKey(idClass);
@@ -196,7 +196,15 @@ $('#electric').on('click', function () {
                         }, 81);
                         electricKit[n].pressed = false;
                      }
-                     if ($('#' + key).hasClass('black')) {
+                     if ($('#' + key).hasClass('black4')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black8')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black12')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black16')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black20')) {
                         $('#' + key).css("background-color", "black");
                      } else {
                         $('#' + key).css("background-color", "white");

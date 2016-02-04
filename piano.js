@@ -146,7 +146,7 @@ $('#piano').on('click', function () {
                   idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey last"';
                }
                else if (count > 0 && count < 23 && (count % 4 === 0)) {
-                  idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey black"';
+                  idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey black'+[i]+'"';
                } else {
                   idClass = 'id="'+(pianoSounds[i].num)+'" class="indKey white"';
                }
@@ -180,21 +180,29 @@ $('#piano').on('click', function () {
                if(event.keyCode === parseInt(key)) {
                   for (var n = 0; n < pianoSounds.length; n++) {
                      if(pianoSounds[n].num.toString() === key) {
-                        $('#sound' + key).animate({volume: 0.0}, 80);
+                        $('#sound' + key).animate({volume: 0.0}, 40);
                         setTimeout( function(){
                            $('#' + key).html('');
-                        }, 81);
+                        }, 41);
                         pianoSounds[n].pressed = false;
                      }
-                     if ($('#' + key).hasClass('black')) {
+                     if ($('#' + key).hasClass('black4')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black8')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black12')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black16')) {
+                        $('#' + key).css("background-color", "black");
+                     } else if ($('#' + key).hasClass('black20')) {
                         $('#' + key).css("background-color", "black");
                      } else {
                         $('#' + key).css("background-color", "white");
                      }
-                 }
-                 }
-            });
-         }
+                     }
+                     }
+                 });
+            }
       } else {
          $('#keyboard').html('');
          $('#piano').css('background-color', 'grey');
