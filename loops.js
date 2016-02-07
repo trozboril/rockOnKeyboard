@@ -32,11 +32,11 @@ $(document).ready(function (){
 			num: 56,
 			sound: "synthloops/91033__m-red__autumn-loop.wav",
 		}
-		]
+		];
 		
 		var counter1 = 0;
 		$(this).keydown(function (event){
-			counter1++
+			counter1++;
 			if(event.keyCode === 49) {
 				if(counter1 % 2 !== 0) {
 					$('#musicPlay').html('<audio controls loop src="' + loopKit[0].sound + '" autoplay></audio>');
@@ -50,7 +50,7 @@ $(document).ready(function (){
 
 		var counter2 = 0;
 		$(this).keydown(function (event){
-			counter2++
+			counter2++;
 			if(event.keyCode === 50) {
 				if(counter2 % 2 !== 0) {
 					$('#musicPlay').html('<audio controls loop src="' + loopKit[1].sound + '" autoplay></audio>');
@@ -64,7 +64,7 @@ $(document).ready(function (){
 
 		var counter3 = 0;
 		$(this).keydown(function (event){
-			counter3++
+			counter3++;
 			if(event.keyCode === 51) {
 				if(counter3 % 2 !== 0) {
 					$('#musicPlay').html('<audio controls loop src="' + loopKit[2].sound + '" autoplay></audio>');
@@ -78,7 +78,7 @@ $(document).ready(function (){
 
 		var counter4 = 0;
 		$(this).keydown(function (event){
-			counter4++
+			counter4++;
 			if(event.keyCode === 52) {
 				if(counter4 % 2 !== 0) {
 					$('#musicPlay').html('<audio controls loop src="' + loopKit[3].sound + '" autoplay></audio>');
@@ -92,7 +92,7 @@ $(document).ready(function (){
 
 		var counter5 = 0;
 		$(this).keydown(function (event){
-			counter5++
+			counter5++;
 			if(event.keyCode === 53) {
 				if(counter5 % 2 !== 0) {
 					$('#musicPlay').html('<audio controls loop src="' + loopKit[4].sound + '" autoplay></audio>');
@@ -106,7 +106,7 @@ $(document).ready(function (){
 
 		var counter6 = 0;
 		$(this).keydown(function (event){
-			counter6++
+			counter6++;
 			if(event.keyCode === 54) {
 				if(counter6 % 2 !== 0) {
 					$('#musicPlay').html('<audio controls loop src="' + loopKit[5].sound + '" autoplay></audio>');
@@ -120,7 +120,7 @@ $(document).ready(function (){
 
 		var counter7 = 0;
 		$(this).keydown(function (event){
-			counter7++
+			counter7++;
 			if(event.keyCode === 55) {
 				if(counter7 % 2 !== 0) {
 					$('#musicPlay').html('<audio controls loop src="' + loopKit[6].sound + '" autoplay></audio>');
@@ -134,7 +134,7 @@ $(document).ready(function (){
 
 		var counter8 = 0;
 		$(this).keydown(function (event){
-			counter8++
+			counter8++;
 			if(event.keyCode === 56) {
 				if(counter8 % 2 !== 0) {
 					$('#musicPlay').html('<audio controls loop src="' + loopKit[7].sound + '" autoplay></audio>');
