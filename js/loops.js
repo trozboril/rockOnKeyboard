@@ -2,35 +2,35 @@ $(document).ready(function (){
 	var loopKit = [
 		{
 			num: 49,
-			sound: "guitarloops/HerMajesty_128_Am_Riff02.wav",
+			sound: "sounds/guitarloops/HerMajesty_128_Am_Riff02.wav",
 		},
 		{
 			num: 50,
-			sound: "guitarloops/WhiteSands_84_E_Chords.wav",
+			sound: "sounds/guitarloops/WhiteSands_84_E_Chords.wav",
 		},
 		{
 			num: 51,
-			sound: "drumloops/beatbumploop.wav",
+			sound: "sounds/drumloops/beatbumploop.wav",
 		},
 		{
 			num: 52,
-			sound: "drumloops/Masked_78_Drums02.wav",
+			sound: "sounds/drumloops/Masked_78_Drums02.wav",
 		},
 		{
 			num: 53,
-			sound: "synthloops/drumLoopCool",
+			sound: "sounds/synthloops/drumLoopCool",
 		},
 		{
 			num: 54,
-			sound: "synthloops/awesomeSynthLoop",
+			sound: "sounds/synthloops/awesomeSynthLoop",
 		},
 		{
 			num: 55,
-			sound: "synthloops/250749__joshuaempyre__groovy-guitar-loop.wav",
+			sound: "sounds/synthloops/250749__joshuaempyre__groovy-guitar-loop.wav",
 		},
 		{
 			num: 56,
-			sound: "synthloops/91033__m-red__autumn-loop.wav",
+			sound: "sounds/synthloops/91033__m-red__autumn-loop.wav",
 		}
 		];
 		

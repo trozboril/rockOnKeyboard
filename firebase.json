@@ -1,9 +1,0 @@
-{
-  "firebase": "rockon-keyboard",
-  "public": "./",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}

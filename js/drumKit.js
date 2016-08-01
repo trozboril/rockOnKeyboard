@@ -9,126 +9,126 @@ $(document).ready(function() {
    var drumKit = [
       {
       num: 81,
-      sound: 'drum-and-base/Chunky01_Kick.wav',
+      sound: 'sounds/drum-and-base/Chunky01_Kick.wav',
       pressed: false
       },
       {
       num: 87,
-      sound: 'effect-drop/Rotor_Rise.wav',
+      sound: 'sounds/effect-drop/Rotor_Rise.wav',
       pressed: false
       },
       {
       num: 69,
-      sound: 'effect-drop/CircuitMelted_Fall.wav',
+      sound: 'sounds/effect-drop/CircuitMelted_Fall.wav',
       pressed: false
       },
       {
       num: 82,
-      sound: 'drum-and-base/Gunge_Kick.wav',
+      sound: 'sounds/drum-and-base/Gunge_Kick.wav',
       pressed: false
       },
       {
       num: 85,
-      sound: 'drum-and-base/Hard03_Kick.wav',
+      sound: 'sounds/drum-and-base/Hard03_Kick.wav',
       pressed: false
       },
       {
       num: 73,
-      sound: 'drum-and-base/LifeLine_Kick.wav',
+      sound: 'sounds/drum-and-base/LifeLine_Kick.wav',
       pressed: false
       },
       {
       num: 79,
-      sound: 'drum-and-base/Gasoline_Drop.wav',
+      sound: 'sounds/drum-and-base/Gasoline_Drop.wav',
       pressed: false
       },
       {
       num: 80,
-      sound: 'drum-and-base/Pillow_B.wav',
+      sound: 'sounds/drum-and-base/Pillow_B.wav',
       pressed: false
       },
       {
       num: 65,
-      sound: 'drum-and-base/Plonk_Snare.wav',
+      sound: 'sounds/drum-and-base/Plonk_Snare.wav',
       pressed: false
       },
       {
       num: 83,
-      sound: 'drum-and-base/Round04_Kick.wav',
+      sound: 'sounds/drum-and-base/Round04_Kick.wav',
       pressed: false
       },
       {
       num: 68,
-      sound: 'drum-and-base/Saturated_Snare02.wav',
+      sound: 'sounds/drum-and-base/Saturated_Snare02.wav',
       pressed: false
       },
       {
       num: 70,
-      sound: 'drum-and-base/Scenics_HiHat05.wav',
+      sound: 'sounds/drum-and-base/Scenics_HiHat05.wav',
       pressed: false
       },
       {
       num: 74,
-      sound: 'drum-and-base/Scenics_Kick04.wav',
+      sound: 'sounds/drum-and-base/Scenics_Kick04.wav',
       pressed: false
       },
       {
       num: 75,
-      sound: 'drum-and-base/Scenics_Kick08.wav',
+      sound: 'sounds/drum-and-base/Scenics_Kick08.wav',
       pressed: false
       },
       {
       num: 76,
-      sound: 'drum-and-base/Scenics_Snare03.wav',
+      sound: 'sounds/drum-and-base/Scenics_Snare03.wav',
       pressed: false
       },
       // ;
       {
       num: 186,
-      sound: 'drum-and-base/Scenics_Snare10.wav',
+      sound: 'sounds/drum-and-base/Scenics_Snare10.wav',
       pressed: false
       },
       {
       num: 90,
-      sound: 'drum-and-base/Sizz_Cym.wav',
+      sound: 'sounds/drum-and-base/Sizz_Cym.wav',
       pressed: false
       },
       {
       num: 88,
-      sound: 'drum-and-base/SmashHit_Snare01.wav',
+      sound: 'sounds/drum-and-base/SmashHit_Snare01.wav',
       pressed: false
       },
       {
       num: 67,
-      sound: 'drum-and-base/Sweep_Clap01.wav',
+      sound: 'sounds/drum-and-base/Sweep_Clap01.wav',
       pressed: false
       },
       {
       num: 86,
-      sound: 'drum-and-base/Temper_CHat.wav',
+      sound: 'sounds/drum-and-base/Temper_CHat.wav',
       pressed: false
       },
       {
       num: 77,
-      sound: 'drum-and-base/Temper_OHat.wav',
+      sound: 'sounds/drum-and-base/Temper_OHat.wav',
       pressed: false
       },
       // ,
       {
       num: 188,
-      sound: 'synthDrums/chew1.wav',
+      sound: 'sounds/synthDrums/chew1.wav',
       pressed: false
       },
       // .
       {
       num: 190,
-      sound: 'synthDrums/chew2.wav',
+      sound: 'sounds/synthDrums/chew2.wav',
       pressed: false
       },
       // /
       {
       num: 191,
-      sound: 'synthDrums/chew3.wav',
+      sound: 'sounds/synthDrums/chew3.wav',
       pressed: false
    }
    ];

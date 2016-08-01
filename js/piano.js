@@ -9,126 +9,126 @@ $('#piano').on('click', function () {
    var pianoSounds = [
    	{
    	num: 81,
-   	sound: '2489__jobro__piano-ff/39156__jobro__piano-ff-009.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39156__jobro__piano-ff-009.wav',
    	pressed: false
    	},
    	{
    	num: 87,
-   	sound: '2489__jobro__piano-ff/39157__jobro__piano-ff-010.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39157__jobro__piano-ff-010.wav',
    	pressed: false
    	},
    	{
    	num: 69,
-   	sound: '2489__jobro__piano-ff/39158__jobro__piano-ff-011.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39158__jobro__piano-ff-011.wav',
    	pressed: false
    	},
    	{
    	num: 82,
-   	sound: '2489__jobro__piano-ff/39159__jobro__piano-ff-012.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39159__jobro__piano-ff-012.wav',
    	pressed: false
    	},
    	{
    	num: 85,
-   	sound: '2489__jobro__piano-ff/39160__jobro__piano-ff-013.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39160__jobro__piano-ff-013.wav',
    	pressed: false
    	},
    	{
    	num: 73,
-   	sound: '2489__jobro__piano-ff/39161__jobro__piano-ff-014.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39161__jobro__piano-ff-014.wav',
    	pressed: false
    	},
    	{
    	num: 79,
-   	sound: '2489__jobro__piano-ff/39162__jobro__piano-ff-015.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39162__jobro__piano-ff-015.wav',
    	pressed: false
    	},
    	{
    	num: 80,
-   	sound: '2489__jobro__piano-ff/39163__jobro__piano-ff-016.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39163__jobro__piano-ff-016.wav',
    	pressed: false
    	},
    	{
    	num: 65,
-   	sound: '2489__jobro__piano-ff/39164__jobro__piano-ff-017.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39164__jobro__piano-ff-017.wav',
    	pressed: false
    	},
    	{
    	num: 83,
-   	sound: '2489__jobro__piano-ff/39165__jobro__piano-ff-018.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39165__jobro__piano-ff-018.wav',
    	pressed: false
    	},
    	{
    	num: 68,
-   	sound: '2489__jobro__piano-ff/39166__jobro__piano-ff-019.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39166__jobro__piano-ff-019.wav',
    	pressed: false
    	},
    	{
    	num: 70,
-   	sound: '2489__jobro__piano-ff/39167__jobro__piano-ff-020.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39167__jobro__piano-ff-020.wav',
    	pressed: false
    	},
    	{
    	num: 74,
-   	sound: '2489__jobro__piano-ff/39168__jobro__piano-ff-021.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39168__jobro__piano-ff-021.wav',
    	pressed: false
    	},
    	{
    	num: 75,
-   	sound: '2489__jobro__piano-ff/39169__jobro__piano-ff-022.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39169__jobro__piano-ff-022.wav',
    	pressed: false
    	},
    	{
    	num: 76,
-   	sound: '2489__jobro__piano-ff/39170__jobro__piano-ff-023.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39170__jobro__piano-ff-023.wav',
    	pressed: false
    	},
    	// ;
    	{
    	num: 186,
-   	sound: '2489__jobro__piano-ff/39171__jobro__piano-ff-024.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39171__jobro__piano-ff-024.wav',
    	pressed: false
    	},
    	{
    	num: 90,
-   	sound: '2489__jobro__piano-ff/39172__jobro__piano-ff-025.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39172__jobro__piano-ff-025.wav',
    	pressed: false
    	},
    	{
    	num: 88,
-   	sound: '2489__jobro__piano-ff/39173__jobro__piano-ff-026.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39173__jobro__piano-ff-026.wav',
    	pressed: false
    	},
    	{
    	num: 67,
-   	sound: '2489__jobro__piano-ff/39174__jobro__piano-ff-027.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39174__jobro__piano-ff-027.wav',
    	pressed: false
    	},
    	{
    	num: 86,
-   	sound: '2489__jobro__piano-ff/39175__jobro__piano-ff-028.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39175__jobro__piano-ff-028.wav',
    	pressed: false
    	},
    	{
    	num: 77,
-   	sound: '2489__jobro__piano-ff/39176__jobro__piano-ff-029.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39176__jobro__piano-ff-029.wav',
    	pressed: false
    	},
    	// ,
    	{
    	num: 188,
-   	sound: '2489__jobro__piano-ff/39177__jobro__piano-ff-030.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39177__jobro__piano-ff-030.wav',
    	pressed: false
    	},
    	// .
    	{
    	num: 190,
-   	sound: '2489__jobro__piano-ff/39178__jobro__piano-ff-031.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39178__jobro__piano-ff-031.wav',
    	pressed: false
    	},
    	// /
    	{
    	num: 191,
-   	sound: '2489__jobro__piano-ff/39179__jobro__piano-ff-032.wav',
+   	sound: 'sounds/2489__jobro__piano-ff/39179__jobro__piano-ff-032.wav',
    	pressed: false
 	}
    ];

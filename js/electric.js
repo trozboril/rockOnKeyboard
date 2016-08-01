@@ -11,126 +11,126 @@ $('#electric').on('click', function () {
    var electricKit = [
       {
       num: 81,
-      sound: 'effect-drop/Blinker_Fall.wav',
+      sound: 'sounds/effect-drop/Blinker_Fall.wav',
       pressed: false
       },
       {
       num: 87,
-      sound: 'effect-drop/BrokenBridge_Rev.wav',
+      sound: 'sounds/effect-drop/BrokenBridge_Rev.wav',
       pressed: false
       },
       {
       num: 69,
-      sound: 'effect-drop/Brutalism_Rise.wav',
+      sound: 'sounds/effect-drop/Brutalism_Rise.wav',
       pressed: false
       },
       {
       num: 82,
-      sound: 'effect-drop/CircuitMelted_Fall.wav',
+      sound: 'sounds/effect-drop/CircuitMelted_Fall.wav',
       pressed: false
       },
       {
       num: 85,
-      sound: 'effect-drop/NeptuneColony_Rise.wav',
+      sound: 'sounds/effect-drop/NeptuneColony_Rise.wav',
       pressed: false
       },
       {
       num: 73,
-      sound: 'effect-drop/Rotor_Rise.wav',
+      sound: 'sounds/effect-drop/Rotor_Rise.wav',
       pressed: false
       },
       {
       num: 79,
-      sound: 'drum-and-base/Gunge_Kick.wav',
+      sound: 'sounds/drum-and-base/Gunge_Kick.wav',
       pressed: false
       },
       {
       num: 80,
-      sound: 'drum-and-base/Gasoline_Drop.wav',
+      sound: 'sounds/drum-and-base/Gasoline_Drop.wav',
       pressed: false
       },
       {
       num: 65,
-      sound: 'buzzSynth/buzz1.wav',
+      sound: 'sounds/buzzSynth/buzz1.wav',
       pressed: false
       },
       {
       num: 83,
-      sound: 'buzzSynth/buzz2.wav',
+      sound: 'sounds/buzzSynth/buzz2.wav',
       pressed: false
       },
       {
       num: 68,
-      sound: 'buzzSynth/buzz3.wav',
+      sound: 'sounds/buzzSynth/buzz3.wav',
       pressed: false
       },
       {
       num: 70,
-      sound: 'buzzSynth/buzz4.wav',
+      sound: 'sounds/buzzSynth/buzz4.wav',
       pressed: false
       },
       {
       num: 74,
-      sound: 'buzzSynth/buzz5.wav',
+      sound: 'sounds/buzzSynth/buzz5.wav',
       pressed: false
       },
       {
       num: 75,
-      sound: 'buzzSynth/buzz6.wav',
+      sound: 'sounds/buzzSynth/buzz6.wav',
       pressed: false
       },
       {
       num: 76,
-      sound: 'buzzSynth/buzz7.wav',
+      sound: 'sounds/buzzSynth/buzz7.wav',
       pressed: false
       },
       // ;
       {
       num: 186,
-      sound: 'buzzSynth/buzz8.wav',
+      sound: 'sounds/buzzSynth/buzz8.wav',
       pressed: false
       },
       {
       num: 90,
-      sound: 'buzzSynth/buzz9.wav',
+      sound: 'sounds/buzzSynth/buzz9.wav',
       pressed: false
       },
       {
       num: 88,
-      sound: 'buzzSynth/buzz10.wav',
+      sound: 'sounds/buzzSynth/buzz10.wav',
       pressed: false
       },
       {
       num: 67,
-      sound: 'buzzSynth/buzz11.wav',
+      sound: 'sounds/buzzSynth/buzz11.wav',
       pressed: false
       },
       {
       num: 86,
-      sound: 'buzzSynth/buzz12.wav',
+      sound: 'sounds/buzzSynth/buzz12.wav',
       pressed: false
       },
       {
       num: 77,
-      sound: 'buzzSynth/buzz13.wav',
+      sound: 'sounds/buzzSynth/buzz13.wav',
       pressed: false
       },
       // ,
       {
       num: 188,
-      sound: 'buzzSynth/buzz14.wav',
+      sound: 'sounds/buzzSynth/buzz14.wav',
       pressed: false
       },
       // .
       {
       num: 190,
-      sound: 'buzzSynth/buzz15.wav',
+      sound: 'sounds/buzzSynth/buzz15.wav',
       pressed: false
       },
       // /
       {
       num: 191,
-      sound: 'buzzSynth/buzz16.wav',
+      sound: 'sounds/buzzSynth/buzz16.wav',
       pressed: false
    }
    ];
