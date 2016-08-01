@@ -134,7 +134,7 @@ $('#piano').on('click', function () {
    ];
 
   
-      counter++
+      counter++;
 
       if (counter % 2 !== 0) {
          $('#piano').css('background-color', 'pink');
